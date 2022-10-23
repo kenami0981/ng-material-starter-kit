@@ -1,0 +1,8 @@
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle m-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Choose an option
+  </button>
+  <ul class="dropdown-menu">
+    <li *ngFor="let holiday of holiday$ | async"><a class="dropdown-item" href="#">{{holiday.localName}}</a></li>
+  </ul>
+</div>

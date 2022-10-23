@@ -1,0 +1,4 @@
+<mat-card>
+  <mat-card-title>Crypto chips</mat-card-title><br>
+  <mat-card-content><button  *ngFor="let crypto of crypto$ | async" class="rounded" style="float: left; padding: 5px; margin: 10px">{{crypto.symbol}}</button></mat-card-content>
+</mat-card>

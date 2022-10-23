@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-title>Categories list</mat-card-title>
+  <mat-card-content>
+
+    <mat-list role="list"><mat-list-item role="listitem" *ngFor="let category of category$ | async">
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input class="form-check-input mt-0" type="checkbox" value="">
+        </div>
+        <input type="text" class="form-control" [placeholder]="category">
+      </div></mat-list-item></mat-list>
+  </mat-card-content>
+</mat-card>
+
+

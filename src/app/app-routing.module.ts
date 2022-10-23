@@ -4,6 +4,7 @@ import { ProductsListComponent } from './components/products-list/products-list.
 import { CategoriesComponent } from './components/categories/categories.component';
 import { CryptoChipsComponent } from './components/crypto-chips/crypto-chips.component';
 import { PublicHolidaysComponent } from './components/public-holidays/public-holidays.component';
+import { CheckboxCategoriesComponent } from './components/checkbox-categories/checkbox-categories.component';
 import { ProductsListComponentModule } from './components/products-list/products-list.component-module';
 import { ProductServiceModule } from './services/product.service-module';
 import { CategoriesComponentModule } from './components/categories/categories.component-module';
@@ -12,9 +13,10 @@ import { CryptoChipsComponentModule } from './components/crypto-chips/crypto-chi
 import { CryptoChipsServiceModule } from './services/crypto-chips.service-module';
 import { PublicHolidaysComponentModule } from './components/public-holidays/public-holidays.component-module';
 import { PublicHolidaysServiceModule } from './services/public-holidays.service-module';
+import { CheckboxCategoriesComponentModule } from './components/checkbox-categories/checkbox-categories.component-module';
 
 @NgModule({
-  imports: [RouterModule.forRoot([{ path: 'products', component: ProductsListComponent }, { path: 'categories', component: CategoriesComponent }, { path: 'crypto', component: CryptoChipsComponent }, { path: 'public-holidays', component: PublicHolidaysComponent }]), ProductsListComponentModule, ProductServiceModule, CategoriesComponentModule, CategoriesServiceModule, CryptoChipsComponentModule, CryptoChipsServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule],
+  imports: [RouterModule.forRoot([{ path: 'products', component: ProductsListComponent }, { path: 'categories', component: CategoriesComponent }, { path: 'crypto', component: CryptoChipsComponent }, { path: 'public-holidays', component: PublicHolidaysComponent }, { path: 'checkbox-categories', component: CheckboxCategoriesComponent }]), ProductsListComponentModule, ProductServiceModule, CategoriesComponentModule, CategoriesServiceModule, CryptoChipsComponentModule, CryptoChipsServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CheckboxCategoriesComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

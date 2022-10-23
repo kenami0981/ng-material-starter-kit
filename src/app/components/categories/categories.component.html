@@ -1,0 +1,5 @@
+<mat-card>
+  <mat-card-title>Select category</mat-card-title>
+  <br>
+  <mat-card-content *ngFor="let item of category$ | async"> {{item}}<div style="float: right"><input type="checkbox"></div></mat-card-content>
+</mat-card>

@@ -1,0 +1,6 @@
+id: {{(product$ |async)?.id}} <br>
+title: {{(product$ |async)?.title}} <br>
+price: {{(product$ |async)?.price}} <br>
+category: {{(product$ |async)?.category}} <br>
+description: {{(product$ |async)?.description}} <br>
+<img [src]="(product$ |async)?.image"><br>

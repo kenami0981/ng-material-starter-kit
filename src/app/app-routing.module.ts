@@ -14,6 +14,7 @@ import { CatComponent } from './components/cat/cat.component';
 import { NameComponent } from './components/name/name.component';
 import { CartComponent } from './components/cart/cart.component';
 import { UserComponent } from './components/user/user.component';
+import { JokeComponent } from './components/joke/joke.component';
 import { ProductsListComponentModule } from './components/products-list/products-list.component-module';
 import { ProductServiceModule } from './services/product.service-module';
 import { CategoriesComponentModule } from './components/categories/categories.component-module';
@@ -38,9 +39,11 @@ import { CartComponentModule } from './components/cart/cart.component-module';
 import { CartServiceModule } from './services/cart.service-module';
 import { UserComponentModule } from './components/user/user.component-module';
 import { AddUserServiceModule } from './services/add-user.service-module';
+import { JokeComponentModule } from './components/joke/joke.component-module';
+import { JokeServiceModule } from './services/joke.service-module';
 
 @NgModule({
-  imports: [RouterModule.forRoot([{ path: 'products', component: ProductsListComponent }, { path: 'categories', component: CategoriesComponent }, { path: 'crypto', component: CryptoChipsComponent }, { path: 'public-holidays', component: PublicHolidaysComponent }, { path: 'checkbox-categories', component: CheckboxCategoriesComponent }, { path: 'categories-menu', component: CategoriesMenuComponent }, { path: 'products-form', component: ProductFormComponent }, { path: 'create-employee', component: EmployeeFormComponent }, { path: 'login', component: LoginComponent }, { path: 'product/:id', component: ProductDetailComponent }, { path: 'cat-fact', component: CatComponent }, { path: 'age/:name', component: NameComponent }, { path: 'cart/:id', component: CartComponent }, { path: 'user/:id', component: UserComponent }]), ProductsListComponentModule, ProductServiceModule, CategoriesComponentModule, CategoriesServiceModule, CryptoChipsComponentModule, CryptoChipsServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CheckboxCategoriesComponentModule, CategoriesMenuComponentModule, ProductFormComponentModule, EmployeeFormComponentModule, EmployeeServiceModule, LoginComponentModule, UserServiceModule, ProductDetailComponentModule, CatComponentModule, CatServiceModule, NameComponentModule, NameServiceModule, CartComponentModule, CartServiceModule, UserComponentModule, AddUserServiceModule],
+  imports: [RouterModule.forRoot([{ path: 'products', component: ProductsListComponent }, { path: 'categories', component: CategoriesComponent }, { path: 'crypto', component: CryptoChipsComponent }, { path: 'public-holidays', component: PublicHolidaysComponent }, { path: 'checkbox-categories', component: CheckboxCategoriesComponent }, { path: 'categories-menu', component: CategoriesMenuComponent }, { path: 'products-form', component: ProductFormComponent }, { path: 'create-employee', component: EmployeeFormComponent }, { path: 'login', component: LoginComponent }, { path: 'product/:id', component: ProductDetailComponent }, { path: 'cat-fact', component: CatComponent }, { path: 'age/:name', component: NameComponent }, { path: 'cart/:id', component: CartComponent }, { path: 'user/:id', component: UserComponent }, { path: 'joke', component: JokeComponent }]), ProductsListComponentModule, ProductServiceModule, CategoriesComponentModule, CategoriesServiceModule, CryptoChipsComponentModule, CryptoChipsServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CheckboxCategoriesComponentModule, CategoriesMenuComponentModule, ProductFormComponentModule, EmployeeFormComponentModule, EmployeeServiceModule, LoginComponentModule, UserServiceModule, ProductDetailComponentModule, CatComponentModule, CatServiceModule, NameComponentModule, NameServiceModule, CartComponentModule, CartServiceModule, UserComponentModule, AddUserServiceModule, JokeComponentModule, JokeServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

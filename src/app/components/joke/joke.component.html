@@ -1,0 +1,5 @@
+<div *ngIf="joke$|async as joke" class="container" style="margin-top:100px">
+  <h2>{{joke.setup}}</h2>
+  <button class="box">{{joke.punchline}}</button>
+</div>
+

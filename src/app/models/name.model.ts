@@ -1,4 +1,5 @@
 export interface NameModel {
-  readonly firstname: string;
-  readonly lastname: string;
+  readonly age: number;
+  readonly count: number;
+  readonly name: string;
 }
